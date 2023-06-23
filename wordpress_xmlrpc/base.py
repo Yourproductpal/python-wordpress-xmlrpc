@@ -44,7 +44,11 @@ class Client(object):
                 raise XmlrpcDisabledError(e.faultString)
             else:
                 raise
+<<<<<<< HEAD
         return method.process_result(raw_result.decode('utf-8'))
+=======
+        return method.process_result(raw_result)
+>>>>>>> parent of 6358287 (changes)
 
 
 class XmlrpcMethod(object):
