@@ -131,7 +131,7 @@ class GetPostTypes(AuthenticatedMethod):
     def process_result(self, raw_result):
         result = {}
         for name, raw_value in raw_result.items():
-            result[name] = self.results_class(raw_value.encode('utf-8'))
+            result[name] = self.results_class(raw_value)
         return result
 
 
