@@ -45,10 +45,14 @@ class Client(object):
             else:
                 raise
 <<<<<<< HEAD
+<<<<<<< HEAD
         return method.process_result(raw_result.decode('utf-8'))
 =======
         return method.process_result(raw_result)
 >>>>>>> parent of 6358287 (changes)
+=======
+        return method.process_result(raw_result.encode('utf-8'))
+>>>>>>> parent of 495ff32 (fixing)
 
 
 class XmlrpcMethod(object):
