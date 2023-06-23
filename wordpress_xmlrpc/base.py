@@ -44,7 +44,7 @@ class Client(object):
                 raise XmlrpcDisabledError(e.faultString)
             else:
                 raise
-        return method.process_result(raw_result)
+        return method.process_result(raw_result.encode('utf-8'))
 
 
 class XmlrpcMethod(object):
